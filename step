@@ -1,10 +1,10 @@
-#include <Stepper.h>
+#include <HuemonelabKit.h>
 
 #define STEPS 2048  // 28BYJ-48 스텝 수
 #define DEGREES_120 (STEPS / 3)  // 120도 회전에 필요한 스텝 수
 
 // 올바른 핀 순서: 8, 9, 10, 11
-Stepper stepper(STEPS, 8, 9, 10, 11);
+Stepper stepper(8, 9, 10, 11);
 
 void setup() {
     stepper.setSpeed(10); // 속도 설정 (RPM)
